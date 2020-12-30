@@ -20,14 +20,18 @@ export const Content = styled.div`
   width: 100%;
   max-width: 600px;
 
+  img {
+    width: 60%;
+  }
+
   form {
-    margin: 80px 0;
+    margin: 0px 0px 60px 0px;
     width: 340px;
     text-align: center;
   }
 
   h1 {
-    margin-bottom: 24px;
+    margin-bottom: 5px;
   }
 
   a {

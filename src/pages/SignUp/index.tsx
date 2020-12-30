@@ -6,7 +6,7 @@ import * as Yup from 'yup';
 
 import getValidationErrors from '../../utils/getValidationErrors';
 
-import logoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo-rufino.svg';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
