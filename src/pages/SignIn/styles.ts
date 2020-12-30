@@ -43,7 +43,7 @@ export const Content = styled.div`
   }
 
   > a {
-    color: #ff9000;
+    color: #cc6c46;
     display: block;
     margin-top: 24px;
     text-decoration: none;
@@ -57,7 +57,7 @@ export const Content = styled.div`
     }
 
     &:hover {
-      color: ${shade(0.2, '#ff9000')};
+      color: ${shade(0.2, '#cc6c46')};
     }
   }
 `;
