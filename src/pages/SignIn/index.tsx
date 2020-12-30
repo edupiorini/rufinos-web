@@ -1,10 +1,11 @@
-import React, { useRef, useCallback } from 'react';
+import React, { useRef, useCallback, useContext } from 'react';
 import { FiLogIn, FiMail, FiLock } from 'react-icons/fi';
 import { Form } from '@unform/web';
 import { FormHandles } from '@unform/core';
 import * as Yup from 'yup';
 
 import getValidationErrors from '../../utils/getValidationErrors';
+import AuthContext from '../../context/AuthContext';
 
 import LogoImg from '../../assets/logo.svg';
 
@@ -14,6 +15,10 @@ import Button from '../../components/Button';
 
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
+
+  const auth = useContext(AuthContext);
+  // eslint-disable-next-line
+  console.log(auth);
 
   const handleSubmit = useCallback(async (data: object) => {
     try {

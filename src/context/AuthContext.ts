@@ -1,9 +1,9 @@
 import { createContext } from 'react';
 
-interface AuthContext {
+interface AuthContextData {
   name: string;
 }
 
-const authContext = createContext<AuthContext>({} as AuthContext); // assim formçamos a inicialização com objeto vazio
+const AuthContext = createContext<AuthContextData>({} as AuthContextData); // assim formçamos a inicialização com objeto vazio
 
-export default authContext;
+export default AuthContext;
