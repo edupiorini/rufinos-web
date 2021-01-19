@@ -7,7 +7,7 @@ import * as Yup from 'yup';
 import getValidationErrors from '../../utils/getValidationErrors';
 import { useAuth } from '../../hooks/AuthContext';
 
-import LogoImg from '../../assets/logo.svg';
+import logoImg from '../../assets/logo.svg';
 
 import { Container, Content, Background } from './styles';
 import Input from '../../components/Input';
@@ -57,10 +57,10 @@ const SignIn: React.FC = () => {
   return (
     <Container>
       <Content>
-        <img src={LogoImg} alt="Rufinos" />
+        <img src={logoImg} alt="Rufino" />
 
         <Form ref={formRef} onSubmit={handleSubmit}>
-          <h1>Faça seu Login</h1>
+          <h1>Faça seu logon</h1>
 
           <Input name="email" icon={FiMail} placeholder="E-mail" />
 
@@ -76,14 +76,14 @@ const SignIn: React.FC = () => {
           <a href="forgot">Esqueci minha senha</a>
         </Form>
 
-        <a href="login">
+        <a href="signup">
           <FiLogIn />
           Criar conta
         </a>
       </Content>
+
       <Background />
     </Container>
   );
 };
-
 export default SignIn;
